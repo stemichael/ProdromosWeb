@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Around Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link href='//fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <!-- //font -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="top-header">
+            <div class="container3">
+                <div class="logo-info">
+                    <ul style="display:inline-flex;">
+                        <li><img src="images/logo.png" style="width:40px;"/></li>
+                        <li style="margin: 9px 0 0 10px;"><strong>Πρόδρομος</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="social-icons">
+                    <ul>                       
+                        <li style="margin: 9px 0 0 0;"><a class="twitter facebook" href="https://www.facebook.com/places/Things-to-do-in-Prodromos-Cyprus/113207895360794/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="top-nav wow fadeInRight animated" data-wow-delay=".2s">
+                    <nav class="navbar navbar-default">
+                        <div class="container">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                Menu						
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="Home.aspx">Αρχική Σελίδα</a></li>
+                                <li><a href="EventsActivities.aspx">Εκδηλώσεις-Δραστηριότητες</a></li>
+                                <li><a href="Gallery.aspx">Εικόνες</a></li>
+                                <li><a href="Churches.aspx" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Κουλτούρα<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="hvr-bounce-to-bottom" href="Churches.aspx">Εκκλησίες-Μνημεία</a></li>
+                                        <li><a class="hvr-bounce-to-bottom" href="Personalities.aspx">Προσωπικότητες</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Maps.aspx">Χάρτες</a></li>
+                                <li><a href="Leisure.aspx">Αναψυχή</a></li>
+                                <li><a href="Educational_Institutions.aspx">Εκπαιδευτικά Ιδρύματα</a></li>
+                                <li><a href="Contact.aspx">Επικοινωνία</a></li>
+                                <li><a href="About.aspx">Πληροφορίες</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- footer -->
+    <div class="footer" style="    background-color:aliceblue;">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 footer-nav wow fadeInLeft animated" data-wow-delay=".2s">
+                    <h4>Μενού</h4>
+                            <ul>
+                                <li><a href="Home.aspx">Αρχική Σελίδα</a></li>
+                                <li><a href="EventsActivities.aspx">Εκδηλώσεις-Δραστηριότητες</a></li>
+                                <li><a href="Gallery.aspx">Εικόνες</a></li>
+                                <li><a href="Churches.aspx">Εκκλησίες-Μνημεία</a></li>
+                                <li><a href="Personalities.aspx">Προσωπικότητες</a></li>
+                                <li><a href="Maps.aspx">Χάρτες</a></li>
+                                <li><a href="Leisure.aspx">Αναψυχή</a></li>
+                                <li><a href="Educational_Institutions.aspx">Εκπαιδευτικά Ιδρύματα</a></li>
+                                <li><a href="Contact.aspx">Επικοινωνία</a></li>
+                                <li><a href="About.aspx">Πληροφορίες</a></li>
+                            </ul>
+                </div>
+                <div class="col-md-5 footer-nav wow fadeInUp animated" data-wow-delay=".2s">
+                    <h4>Τελευταίες Ειδήσεις</h4>
+                    <p>Nunc non feugiat quam, vitae placerat ipsum. Cras at felis congue, volutpat neque eget.
+                        Nunc non feugiat quam, vitae placerat ipsum. 
+                        Cras at felis congue, volutpat neque eget.
+                        Nunc non feugiat quam, vitae placerat ipsum. 
+                        Cras at felis congue, volutpat neque eget.Nunc non feugiat quam, vitae placerat ipsum. 
+                        Cras at felis congue, volutpat neque eget</p>
+                </div>
+                <div class="col-md-4 footer-nav wow fadeInRight animated" data-wow-delay=".2s">
+                    <h4>Τελευταίες Εκδηλώσεις</h4>
+                    <div class="news-grids">
+                        <div class="news-grid">
+                            <h6>10/07/2016 : <a href="EventsActivities.aspx"><strong>Μνημόσυνο των τεσσάρων Αρχιεπισκόπων</strong></a></h6>
+                            <h6>14/08/2016 : <a href="EventsActivities.aspx"><strong>Φιλανθρωπικό παζαράκι γλυκών και αλμυρών</strong></a></h6>
+                            <h6>19/08/2016 : <a href="EventsActivities.aspx"><strong>Τουρνουά πιλόττας και ταβλιού</strong></a></h6>
+                            <h6>20/08/2016 : <a href="EventsActivities.aspx"><strong>Ετήσια Χοροεσπερίδα στο εστιατόριο ΒΕΡΕΓΓΑΡΙΑ</strong></a></h6>
+                            <h6>12/11/2016 : <a href="EventsActivities.aspx"><strong>Κυπριακή Βραδιά στο οίκημα του Συνδέσμου</strong></a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+</body>
+</html>
